@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/number_convertor"
+        android:textSize="20sp"
+        android:padding="2dp"
+        android:textColor="#DE000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:fontFamily="@font/poppins"
+        android:maxLength="10"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/enter_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <RadioGroup
+        android:id="@+id/inputchoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/etInput"
+        app:layout_constraintStart_toStartOf="@id/etInput"
+        app:layout_constraintTop_toBottomOf="@+id/etInput">
+
+        <RadioButton
+            android:id="@+id/inputRadioDec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:elevation="4dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_button_background"
+            android:textColor="@drawable/radio_text_color"
+            android:fontFamily="@font/poppins"
+            android:text="@string/decimal" />
+
+        <RadioButton
+            android:id="@+id/inputRadioBin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_button_background"
+            android:textColor="@drawable/radio_text_color"
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/binary" />
+
+        <RadioButton
+            android:id="@+id/inputRadioOctal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:elevation="4dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_button_background"
+            android:textColor="@drawable/radio_text_color"
+            android:fontFamily="@font/poppins"
+            android:text="@string/octal" />
+
+        <RadioButton
+            android:id="@+id/inputRadioHex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:elevation="4dp"
+            android:padding="8dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_button_background"
+            android:textColor="@drawable/radio_text_color"
+            android:fontFamily="@font/poppins"
+            android:text="@string/hexa_decimal" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintEnd_toEndOf="@id/inputchoice"
+        app:layout_constraintStart_toStartOf="@id/inputchoice"
+        app:layout_constraintTop_toBottomOf="@id/inputchoice"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/result"
+        />
+
+    <RadioGroup
+        android:id="@+id/choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/tvResult"
+        app:layout_constraintStart_toStartOf="@id/tvResult"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult">
+
+        <RadioButton
+            android:id="@+id/radioDec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:elevation="4dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_button_background"
+            android:textColor="@drawable/radio_text_color"
+            android:fontFamily="@font/poppins"
+            android:text="@string/decimal" />
+
+        <RadioButton
+            android:id="@+id/radioBin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_button_background"
+            android:textColor="@drawable/radio_text_color"
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/binary" />
+
+        <RadioButton
+            android:id="@+id/radioOctal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:elevation="4dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_button_background"
+            android:textColor="@drawable/radio_text_color"
+            android:fontFamily="@font/poppins"
+            android:text="@string/octal" />
+
+        <RadioButton
+            android:id="@+id/radioHex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:elevation="4dp"
+            android:padding="8dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_button_background"
+            android:textColor="@drawable/radio_text_color"
+            android:fontFamily="@font/poppins"
+            android:text="@string/hexa_decimal" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
