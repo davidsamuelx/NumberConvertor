@@ -3,9 +3,9 @@
     <string name="number_convertor">Number Convertor</string>
     <string name="enter_number">enter number</string>
     <string name="result">result</string>
-    <string name="binary">binary</string>
-    <string name="octal">octal</string>
-    <string name="hexa_decimal">hexa decimal</string>
-    <string name="decimal">decimal</string>
+    <string name="binary">Bin</string>
+    <string name="oct">Oct</string>
+    <string name="hexa_decimal">Hex</string>
+    <string name="decimal">Dec</string>
     <string name="convert">Convert</string>
 </resources>

@@ -53,6 +53,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:elevation="4dp"
+            android:gravity="center"
             android:button="@android:color/transparent"
             android:background="@drawable/radio_button_background"
             android:textColor="@drawable/radio_text_color"
@@ -69,6 +70,7 @@
             android:background="@drawable/radio_button_background"
             android:textColor="@drawable/radio_text_color"
             android:elevation="4dp"
+            android:gravity="center"
             android:fontFamily="@font/poppins"
             android:text="@string/binary" />
 
@@ -83,7 +85,8 @@
             android:background="@drawable/radio_button_background"
             android:textColor="@drawable/radio_text_color"
             android:fontFamily="@font/poppins"
-            android:text="@string/octal" />
+            android:gravity="center"
+            android:text="@string/oct" />
 
         <RadioButton
             android:id="@+id/inputRadioHex"
@@ -92,6 +95,7 @@
             android:layout_marginStart="8dp"
             android:elevation="4dp"
             android:padding="8dp"
+            android:gravity="center"
             android:button="@android:color/transparent"
             android:background="@drawable/radio_button_background"
             android:textColor="@drawable/radio_text_color"
@@ -131,6 +135,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:elevation="4dp"
+            android:gravity="center"
             android:button="@android:color/transparent"
             android:background="@drawable/radio_button_background"
             android:textColor="@drawable/radio_text_color"
@@ -143,6 +148,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:padding="8dp"
+            android:gravity="center"
             android:button="@android:color/transparent"
             android:background="@drawable/radio_button_background"
             android:textColor="@drawable/radio_text_color"
@@ -157,11 +163,12 @@
             android:layout_marginStart="8dp"
             android:padding="8dp"
             android:elevation="4dp"
+            android:gravity="center"
             android:button="@android:color/transparent"
             android:background="@drawable/radio_button_background"
             android:textColor="@drawable/radio_text_color"
             android:fontFamily="@font/poppins"
-            android:text="@string/octal" />
+            android:text="@string/oct" />
 
         <RadioButton
             android:id="@+id/radioHex"
@@ -170,6 +177,7 @@
             android:layout_marginStart="8dp"
             android:elevation="4dp"
             android:padding="8dp"
+            android:gravity="center"
             android:button="@android:color/transparent"
             android:background="@drawable/radio_button_background"
             android:textColor="@drawable/radio_text_color"
