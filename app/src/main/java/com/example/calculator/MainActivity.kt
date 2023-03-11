@@ -3,6 +3,7 @@ package com.example.calculator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import androidx.core.view.forEach
 
 class MainActivity : AppCompatActivity() {
     private lateinit var choice: RadioGroup
@@ -20,12 +21,16 @@ class MainActivity : AppCompatActivity() {
         choice = findViewById(R.id.choice)
         inputBaseChoice = findViewById(R.id.inputchoice)
 
-        choice.setOnCheckedChangeListener{ _, _ ->
-            convert()
+        choice.forEach { radioButton ->
+            radioButton.setOnClickListener {
+                convert()
+            }
         }
 
-        inputBaseChoice.setOnCheckedChangeListener { _, _ ->
-            convert()
+        inputBaseChoice.forEach { radioButton ->
+            radioButton.setOnClickListener {
+                convert()
+            }
         }
     }
 
