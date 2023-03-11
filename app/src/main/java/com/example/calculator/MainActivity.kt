@@ -51,8 +51,7 @@ class MainActivity : AppCompatActivity() {
             else -> return
         }
         try {
-            val result = inputNumber.toLong(fromBase).toString(toBase)
-            tvResult.text = result
+            tvResult.text = inputNumber.toLong(fromBase).toString(toBase)
         } catch (e: NumberFormatException) {
             Toast.makeText(this, "Invalid input number", Toast.LENGTH_SHORT).show()
         }
