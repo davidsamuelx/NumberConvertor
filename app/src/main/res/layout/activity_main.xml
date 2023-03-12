@@ -7,43 +7,30 @@
     android:background="@color/background"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="@string/number_convertor"
-        android:textSize="20sp"
-        android:padding="2dp"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:padding="16dp"
         android:fontFamily="@font/poppins"
-        android:maxLength="10"
+        android:maxLength="16"
         android:textSize="16sp"
         android:textColorHint="@color/hintColor"
-        android:textColor="@color/white"
+        android:textColor="@color/veryWhite"
         android:background="@drawable/edit_text_background"
         android:hint="@string/enter_number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        app:layout_constraintEnd_toEndOf="@id/choice"
+        app:layout_constraintStart_toStartOf="@id/choice"
+        app:layout_constraintTop_toBottomOf="@+id/choice" />
 
     <TextView
         android:id="@+id/tvFrom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/etInput"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
         app:layout_constraintStart_toStartOf="@id/inputchoice"
         android:layout_marginTop="8dp"
         android:textColor="@color/white"
@@ -55,9 +42,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="@id/etInput"
-        app:layout_constraintStart_toStartOf="@id/etInput"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/tvResult"
+        app:layout_constraintStart_toStartOf="@id/tvResult"
         app:layout_constraintTop_toBottomOf="@+id/tvFrom">
 
         <RadioButton
@@ -121,17 +108,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
         android:padding="16dp"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:fontFamily="@font/poppins"
-        app:layout_constraintEnd_toEndOf="@id/inputchoice"
-        app:layout_constraintStart_toStartOf="@id/inputchoice"
-        app:layout_constraintTop_toBottomOf="@id/inputchoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:gravity="center"
         android:textColor="@color/veryWhite"
         android:hint="@string/result"
-        android:textColorHint="@color/hintColor"
+        android:textColorHint="@color/white"
         />
 
     <TextView
@@ -139,8 +126,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/choice"
-        app:layout_constraintBottom_toTopOf="@id/choice"
-        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintTop_toBottomOf="@id/inputchoice"
         android:textColor="@color/white"
         android:text="@string/to"
         android:layout_marginTop="4dp"
@@ -152,8 +138,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="@id/tvResult"
-        app:layout_constraintStart_toStartOf="@id/tvResult"
+        app:layout_constraintEnd_toEndOf="@id/inputchoice"
+        app:layout_constraintStart_toStartOf="@id/inputchoice"
         app:layout_constraintTop_toBottomOf="@+id/tvTO">
 
         <RadioButton
