@@ -8,4 +8,6 @@
     <string name="hexa_decimal">Hex</string>
     <string name="decimal">Dec</string>
     <string name="convert">Convert</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
 </resources>

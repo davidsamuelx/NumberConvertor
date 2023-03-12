@@ -6,7 +6,9 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="background">#EBFCFB</color>
-    <color name="primary">#1DB7AE</color>
+    <color name="white">#FAFAFA</color>
+    <color name="veryWhite">#FFFFFF</color>
+    <color name="background">#090909</color>
+    <color name="primary">#F59718</color>
+    <color name="hintColor">#8E8E8E</color>
 </resources>

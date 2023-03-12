@@ -16,7 +16,7 @@
         android:text="@string/number_convertor"
         android:textSize="20sp"
         android:padding="2dp"
-        android:textColor="#DE000000"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,21 +31,34 @@
         android:fontFamily="@font/poppins"
         android:maxLength="10"
         android:textSize="16sp"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/white"
         android:background="@drawable/edit_text_background"
         android:hint="@string/enter_number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
+    <TextView
+        android:id="@+id/tvFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etInput"
+        app:layout_constraintStart_toStartOf="@id/inputchoice"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:text="@string/from"
+        />
+
     <RadioGroup
         android:id="@+id/inputchoice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="@id/etInput"
         app:layout_constraintStart_toStartOf="@id/etInput"
-        app:layout_constraintTop_toBottomOf="@+id/etInput">
+        app:layout_constraintTop_toBottomOf="@+id/tvFrom">
 
         <RadioButton
             android:id="@+id/inputRadioDec"
@@ -90,7 +103,7 @@
 
         <RadioButton
             android:id="@+id/inputRadioHex"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:elevation="4dp"
@@ -110,13 +123,27 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         android:padding="16dp"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:fontFamily="@font/poppins"
         app:layout_constraintEnd_toEndOf="@id/inputchoice"
         app:layout_constraintStart_toStartOf="@id/inputchoice"
         app:layout_constraintTop_toBottomOf="@id/inputchoice"
-        android:background="@drawable/edit_text_background"
+        android:gravity="center"
+        android:textColor="@color/veryWhite"
         android:hint="@string/result"
+        android:textColorHint="@color/hintColor"
+        />
+
+    <TextView
+        android:id="@+id/tvTO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/choice"
+        app:layout_constraintBottom_toTopOf="@id/choice"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        android:textColor="@color/white"
+        android:text="@string/to"
+        android:layout_marginTop="4dp"
         />
 
     <RadioGroup
@@ -124,10 +151,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="@id/tvResult"
         app:layout_constraintStart_toStartOf="@id/tvResult"
-        app:layout_constraintTop_toBottomOf="@+id/tvResult">
+        app:layout_constraintTop_toBottomOf="@+id/tvTO">
 
         <RadioButton
             android:id="@+id/radioDec"
